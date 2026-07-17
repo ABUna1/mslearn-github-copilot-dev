@@ -88,7 +88,7 @@ Use the following steps to set up the library application:
 
     1. Navigate to the Windows Desktop folder, select **AccelerateDevGHCopilot** and then select **Select Folder**.
 
-1. In the Visual Studio Code SOLUTION EXPLORER view, expand the solution to show the following solution structure:
+1. In the Visual Studio Code **Explorer** view, expand the solution to show the following solution structure:
 
     - AccelerateDevGHCopilot\
         - src\
@@ -100,7 +100,7 @@ Use the following steps to set up the library application:
 
 1. Ensure that the solution builds successfully.
 
-    For example, in the SOLUTION EXPLORER view, right-click **AccelerateDevGHCopilot**, and then select **Build**.
+    For example, in the **Explorer** view, right-click **src\Library.Console\Library.Console.csproj**, and then select **Build**.
 
     You may see some Warnings, but there shouldn't be any Errors reported.
 
@@ -130,7 +130,7 @@ Use the following steps to complete this section of the exercise:
 
     The Set Mode and Pick Model menus are in the bottom-left corner of the Chat view.
 
-    > **NOTE**: You can use a different model if your plan allows it, but responses may differ from those shown in this exercise. Free-plan users have a limited number of monthly chat requests, so each prompt counts against your quota.
+    > **NOTE**: You can use a different model if your plan allows it, but responses may differ from those shown in this exercise. Free-plan users have a limited number of monthly **AI credits**, so each prompt counts against your quota.
 
 1. In the Chat view, enter a prompt that uses the **#codebase** chat variable to include the full context of the codebase when generating a description of your code.
 
@@ -151,7 +151,7 @@ Use the following steps to complete this section of the exercise:
     - **Library.Infrastructure**
     - **UnitTests**
 
-1. Use the SOLUTION EXPLORER view to expand the project folders.
+1. Use the **Explorer** view to expand the project folders.
 
 1. Take a moment to review the project files.
 
@@ -195,9 +195,9 @@ Use the following steps to complete this section of the exercise:
 
 1. Expand the **Library.Infrastructure** project, and then expand the **Data** folder.
 
-1. Use a drag-and-drop operation to add the following files from the SOLUTION EXPLORER view to the Chat context: **JsonData.cs**, **JsonLoanRepository.cs**, and **JsonPatronRepository.cs**.
+1. Use a drag-and-drop operation to add the following files from the **Explorer** view to the Chat context: **JsonData.cs**, **JsonLoanRepository.cs**, and **JsonPatronRepository.cs**.
 
-    GitHub Copilot uses the Chat context to understand the code files that are relevant to your prompt. You can add files to the Chat context using drag-and-drop operations, or you can use the **Add Context** button in the Chat view.
+    GitHub Copilot uses the Chat context to understand the code files that are relevant to your prompt. You can add files to the Chat context using drag-and-drop operations, right-click and select **Add File to Chat**, or you can use the **Add Context** button in the Chat view.
 
     Instead of adding individual files manually, you can let Copilot find the right files from your codebase. This approach can be useful when you don't know which files are relevant to your question, but it does slow down the response time. To let Copilot find the right files automatically, add #codebase in your prompt.
 
@@ -206,7 +206,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    /explain Explain how the data access classes work
+    /explain how the data access classes work
     ```
 
 1. Take a couple minutes to read through the response.
@@ -227,13 +227,9 @@ Running the application helps you understand the user interface, key features of
 
 Use the following steps to complete this section of the exercise:
 
-1. Ensure that you have **SOLUTION EXPLORER** open in the Explorer view.
+1. Ensure that you have **Library.Console** open in the **Explorer** view.
 
-    The SOLUTION EXPLORER is a dedicated view added to Visual Studio Code's primary sidebar by the C# Dev Kit extension. It provides a structured, solution-centric view of your .NET application that's similar to the Solution Explorer in the Visual Studio IDE. It's more informative and organized than the plain folder/file tree that the built-in Explorer view.
-
-1. To run the application, right-click **Library.Console**, select **Debug**, and then select **Start New Instance**.
-
-    If the **Debug** and **Start New Instance** options aren't displayed, ensure that you're using the Solution Explorer view and not the Explorer view.
+1. To run the application, right-click **src\Library.Console\Library.Console.csproj**, select **Debug**, and then select **Start New Instance**.
 
     The following steps guide you through a simple use case.
 
