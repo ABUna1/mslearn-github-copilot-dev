@@ -87,53 +87,36 @@ Use the following steps to complete this section of the exercise:
 
 1. On the bottom status bar, select the GitHub Copilot icon.
 
-    The Copilot status menu opens with options to manage GitHub Copilot features, including the ability to enable or disable inline suggestions and next edit suggestions (NES).
+    The Copilot status menu opens with options to manage GitHub Copilot features, including the ability to modify inline suggestions, index your codebase, and sync your session data.
 
-1. Notice that the Copilot status menu includes options to enable/disable **Inline Suggestions** and **Next edit suggestions**.
+1. Expand the **Inline Suggestions** section.
+    
+    Notice you can:
+    - Disable inline suggestions globally or for the current file's language. 
+    - Modify the **Eagerness** setting to adjust how proactively the AI offers suggestions. 
+    - You can also use the **Snooze** button to temporarily pause inline suggestions for five-minute increments, and then select **Cancel Snooze** to resume them.
 
-    You can disable inline suggestions globally or for the current file's language. You can also use the **Snooze** button to temporarily pause inline suggestions for five-minute increments, and then select **Cancel Snooze** to resume them.
+1. To open the Chat view, select the **Toggle Chat** icon to the right of the **Quick Access** search bars. Or select **View > Chat**.
 
-1. To open the Chat menu, select the **More Actions** dropdown to the right of the Chat button in the title bar.
-
-     The Chat menu includes options to open the Chat view, Quick Chat, and Inline Chat interfaces, as well as options to manage settings for each of those interfaces.
-
-1. On the Chat menu, select **Configure Inline Suggestions**.
-
-1. Notice that the Configure Inline Suggestions menu includes an option to **Edit Settings**
-
-    Selecting the Edit Settings option opens the Visual Studio Code settings editor in a view that's filtered for GitHub Copilot. This provides a comprehensive interface for managing GitHub Copilot settings.
-
-1. To open Visual Studio Code's Extensions view, select the Extensions icon on the left menu bar.
-
-1. In the Extensions view, enter **GitHub Copilot Chat** in the search bar.
-
-1. To open the GitHub Copilot Chat settings menu, select the gear icon on the GitHub Copilot Chat extension.
-
-1. Notice the options to Enable AI Features and Disable AI Features.
-
-The GitHub Copilot Chat settings menu includes options to enable or disable GitHub Copilot features for specific languages. For example, you can disable GitHub Copilot for Markdown files if you don't want suggestions when working on documentation.
-
-If you want to test the enable/disable options, you can select the disable option. However, be sure to re-enable GitHub Copilot before you continue with this exercise.
+     The Chat window is where you can interact with GitHub Copilot using natural language prompts. You can ask questions, request code suggestions, or get help with specific tasks.
 
 ### Examine settings for the GitHub Copilot Chat extension
 
-Default settings are configured for you when you activate GitHub Copilot in Visual Studio Code. The settings are organized under the Extensions label, which includes settings for GitHub Copilot Chat. You can customize settings for GitHub Copilot using Visual Studio Code's settings tab.
+Default settings are configured for you when you activate GitHub Copilot in Visual Studio Code. The settings for GitHub Copilot are organized under the Chat label. You can customize settings for GitHub Copilot using Visual Studio Code's settings tab.
 
 Use the following steps to complete this section of the exercise:
 
-1. On Visual Studio Code's top menu bar, open the Chat menu (next to the Chat button in the title bar).
+1. In the Chat view, select the three dots in the top right corner of the Chat view, and then select **Settings**.
 
-    The Chat menu includes a **Configure Inline Suggestions** option that provides the option to **Edit Settings** associated with GitHub Copilot.
-
-1. On the Chat menu, select **Configure Inline Suggestions**, and then select **Edit Settings**.
+    The Visual Studio Code settings editor opens, filtering options with the GitHub Copilot Chat feature.
 
 1. Take a moment to review how the GitHub Copilot settings are organized.
 
-    Notice that the left side of the settings editor shows the settings organized into sections, including a section for Extensions. The extensions section should include the GitHub Copilot Chat extension. The right side of the screen shows the settings for the selected section (all settings are displayed when no section is selected). You can use the search bar at the top of the settings editor to filter settings by keyword.
+    Notice that the left side of the settings editor shows the settings organized into sections, including a section for Chat. The right side of the screen shows the settings for the selected section (all settings are displayed when no section is selected). You can use the search bar at the top of the settings editor to filter settings by keyword.
 
-1. Under the Extensions label, select **GitHub Copilot Chat**.
+1. Observe the options under the **Chat** section.
 
-    Notice that the settings list is now filtered for GitHub Copilot Chat settings only.
+    Notice that the settings list is filtered for GitHub Copilot Chat settings only.
 
     The GitHub Copilot Chat extension has a long list of available settings and it's updated regularly. The GitHub Copilot Chat extension also includes preview and experimental settings that are subject to change and could be discontinued. The preview and experimental settings are included at the end of the list and they're tagged as either **Preview** or **Experimental**.
 
@@ -177,11 +160,7 @@ Visual Studio Code's Chat view provides a comprehensive interface for interactin
 
 Use the following steps to complete this section of the exercise:
 
-1. To toggle the Chat view from open to closed, select the **Chat** button (or press **Ctrl+Alt+I**).
-
-    The Chat button (labeled **Toggle Chat** in the user interface) is located at the top of the Visual Studio Code window, just to the right of the search textbox.
-
-1. To toggle the Chat view from closed to open, select the **Chat** button again.
+1. To toggle the Chat view from open to closed, select the **Toggle Chat** button (or press **Ctrl+Alt+I**).
 
     The default location for the Chat view is the Secondary Side Bar on the right side of the Visual Studio Code window. A **Views and More Actions** button (three dots on the top menu of the Chat view) can be used to open a context menu with options for moving the Chat view to different locations, opening the Chat view in an editor tab, or opening it in a separate window.
 
@@ -197,7 +176,7 @@ Use the following steps to complete this section of the exercise:
 
     - Add Context button: The Add Context button is located in bottom section of the Chat view. You can use this button search for resources that add context to Chat session. The resources can be anything from internal project files to public repositories on GitHub that are external to your organization.
 
-    - Set Agent menu: The Set Agent dropdown menu is located to the right of the Start Voice Chat button. Based on your specific needs, you can choose between different modes of chat:
+    - Set Agent menu: The Set Agent dropdown menu is located to the right of the Add Context button (or to the right of the Start Voice Chat button if the VS Code Speech extension is installeds). Based on your specific needs, you can choose between different modes of chat:
 
         - **Ask**: Use this mode to ask GitHub Copilot questions about your codebase. You can use Ask mode to explain code, suggest changes, or provide information about the codebase.
         - **Plan**: Use this mode to plan code changes in your workspace before implementing them. When you select the Plan mode, GitHub Copilot provides a structured response that breaks down the task into smaller steps, helping you understand the overall approach before any code changes are made. The Plan mode is usually reserved for highly complex tasks.
@@ -211,7 +190,7 @@ Use the following steps to complete this section of the exercise:
 
     - Send button: The Send button is located to the right of the Pick Model menu. You can use this button to submit your prompt to GitHub Copilot and receive a response. The menu includes several options for how your prompt is submitted.
 
-    - Set Session Target menu: The Set Session Target menu is located in the bottom left corner of the Chat view. You can use this menu to select where the agent runs. For example, you can select to run the agent locally in the VS Code editor, run the agent in the background using Copilot CLI, run the agent remotely in the cloud, or use a third-party agent harness and SDK such as Anthropic's Claude.
+    - Set Delegate Session menu: The Set Session Target menu is located in the bottom left corner of the Chat view. You can use this menu to select where the agent runs. For example, you can select to run the agent locally in the VS Code editor, run the agent in the background using Copilot CLI, run the agent remotely in the cloud, or use a third-party agent harness and SDK such as Anthropic's Claude.
 
     - Set Permissions button: The Set Permissions button is located to the right of the Delegate Session button. You can use this button to manage permissions for the current chat session. For example, you can use this menu to allow or restrict GitHub Copilot's access to your codebase, terminal, or other resources.
 
@@ -273,7 +252,7 @@ Use the following steps to complete this section of the exercise:
     - Open Inline Chat  **Ctrl+I**
     - Open Quick Chat   **Ctrl+Shift+Alt+L**
 
-1. On the Chat menu, select **Open Quick Chat**.
+1. Use the shortcut **Ctrl+Shift+Alt+L** to open the Quick Chat window.
 
     By default, the Quick Chat window opens at the top center of the Visual Studio Code window.
 
@@ -324,8 +303,6 @@ You can also add a code selection or file to an existing Chat session without op
 ### Compare the Chat view's Ask and Agent modes
 
 The Chat view has three modes: **Ask**, **Plan**, and **Agent**. The Ask mode is designed for asking questions and generating code suggestions. The Agent mode is designed for autonomous coding tasks where Copilot can search your workspace, edit files, run terminal commands, and use tools. The Plan mode is designed for planning complex tasks by breaking them down into smaller steps.
-
-> **NOTE**: Edit mode is deprecated as of VS Code 1.110 and will be removed in a future release. Agent mode provides a superset of Edit mode's capabilities. The following steps use Ask and Agent modes instead.
 
 Use the following steps to complete this section of the exercise:
 
