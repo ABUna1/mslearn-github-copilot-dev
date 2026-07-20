@@ -184,7 +184,7 @@ Use the following steps to complete this task:
 
 1. Take a minute to familiarize yourself with the project structure.
 
-    Use Visual Studio Code's EXPLORER view to expand the application folders. You should see a folder structure that's similar to the following example:
+    Use Visual Studio Code's Explorer view to expand the application folders. You should see a folder structure that's similar to the following example:
 
     ```plaintext
     CONTOSODASHBOARD (root)
@@ -284,7 +284,7 @@ Use the following steps to complete this task:
 
     > **NOTE**: If you're using a PC with an x64 processor or a Mac, you can skip this step since SQL Server LocalDB works correctly in those environments.
 
-1. In the EXPLORER view, right-click **ContosoDashboard** and then select **Open in Integrated Terminal**.
+1. In the Explorer view, right-click **ContosoDashboard** and then select **Open in Integrated Terminal**.
 
     The terminal prompt should open in the ContosoDashboard project directory. For example:
 
@@ -347,7 +347,7 @@ In this task, you use GitHub Copilot's `/speckit.constitution` command to genera
 
 Use the following steps to complete this task:
 
-1. Use Visual Studio Code's EXPLORER view to expand the **.github/agents** and **.specify/memory** folders.
+1. Use Visual Studio Code's Explorer view to expand the **.github/agents** and **.specify/memory** folders.
 
     These folders contain the GitHub Spec Kit resources used to create a constitution.md file. It might be helpful to familiarize yourself with these resource files before working on your constitution file.
 
@@ -435,13 +435,13 @@ In this task, you use GitHub Copilot's `/speckit.specify` command to generate a 
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, under the **.github/agents** folder, open the **speckit.specify.agent.md** file.
+1. In Visual Studio Code's Explorer view, under the **.github/agents** folder, open the **speckit.specify.agent.md** file.
 
 1. Take a minute to review the **speckit.specify.agent.md** file.
 
     Notice the detailed instructions provided to GitHub Copilot. The agent follows a systematic approach to generate a spec file that clearly defines the requirements.
 
-1. In Visual Studio Code's EXPLORER view, expand the **StakeholderDocs** folder, and then open the **document-upload-and-management-feature.md** file.
+1. In Visual Studio Code's Explorer view, expand the **StakeholderDocs** folder, and then open the **document-upload-and-management-feature.md** file.
 
 1. Take a couple minutes to read through the **document-upload-and-management-feature.md** file.
 
@@ -493,9 +493,9 @@ Use the following steps to complete this task:
 
     It can take 4-6 minutes to create and validate the spec.md file.
 
-1. Once the specify workflow is complete, use Visual Studio Code's EXPLORER view to expand the **specs** and **checklists** folders.
+1. Once the specify workflow is complete, use Visual Studio Code's Explorer view to expand the **specs** and **checklists** folders.
 
-1. In the EXPLORER view, select **spec.md**, and then take a couple minutes to review the spec.md file.
+1. In the Explorer view, select **spec.md**, and then take a couple minutes to review the spec.md file.
 
     The spec.md file should include a detailed specification for the document upload and management feature based on the stakeholder requirements.
 
@@ -527,7 +527,7 @@ Use the following steps to complete this task:
 
     - ❌ Avoid: Vague criteria like "Upload should work well" or "System should be fast"
 
-1. In the EXPLORER view, select **requirements.md**, and then take a minute to review the requirements.md file.
+1. In the Explorer view, select **requirements.md**, and then take a minute to review the requirements.md file.
 
     Verify that no issues are reported in the **requirements.md** file. You should see that all checklist items passed successfully.
 
@@ -599,7 +599,7 @@ In this task, you use GitHub Copilot's `/speckit.plan` command to generate a com
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, under the **.github/agents** folder, open the **speckit.plan.agent.md** file.
+1. In Visual Studio Code's Explorer view, under the **.github/agents** folder, open the **speckit.plan.agent.md** file.
 
 1. Take a minute to review the **speckit.plan.agent.md** file.
 
@@ -662,7 +662,7 @@ In this task, you use the GitHub Spec Kit's `/speckit.tasks` command to generate
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, under the **.github/agents** folder, open the **speckit.tasks.agent.md** file.
+1. In Visual Studio Code's Explorer view, under the **.github/agents** folder, open the **speckit.tasks.agent.md** file.
 
 1. Take a minute to review the **speckit.tasks.agent.md** file.
 

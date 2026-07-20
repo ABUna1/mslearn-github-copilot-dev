@@ -61,39 +61,25 @@ This exercise includes the following tasks:
 
 ## Set up the library application in Visual Studio Code
 
-Your colleague has developed an initial version of the library application and has made it available as a .zip file. You need to download the zip file, extract the code files, and then open the solution in Visual Studio Code.
+Your colleague has developed an initial version of the library application and made it available in the training repository. You need to clone the repository and then open the library solution in Visual Studio Code.
 
 Use the following steps to set up the library application:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the library application, paste the following URL into your browser's address bar: [GitHub Copilot lab - Analyze and document code](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/AZ2007LabAppM2.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file named AZ2007LabAppM2.zip will be downloaded to your lab environment.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **AZ2007LabAppM2.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **AZ2007LabAppM2.zip**, and then select **Extract all**.
-
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Open the extracted files folder, then copy the **AccelerateDevGHCopilot** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **AccelerateDevGHCopilot** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **AccelerateDevGHCopilot** and then select **Select Folder**.
-
-1. In the Visual Studio Code **Explorer** view, expand the solution to show the following solution structure:
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles\02-analyze-document-code\AccelerateDevGHCopilot` folder and verify the following solution structure:
 
     - AccelerateDevGHCopilot\
         - src\
@@ -105,7 +91,7 @@ Use the following steps to set up the library application:
 
 1. Ensure that the solution builds successfully.
 
-    For example, in the **Explorer** view, right-click **src\Library.Console\Library.Console.csproj**, and then select **Build**.
+    For example, in the Explorer view, right-click **LabFiles\02-analyze-document-code\AccelerateDevGHCopilot\src\Library.Console\Library.Console.csproj**, and then select **Build**.
 
     You may see some Warnings, but there shouldn't be any Errors reported.
 

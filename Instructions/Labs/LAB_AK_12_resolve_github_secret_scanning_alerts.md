@@ -257,7 +257,7 @@ Use the following steps to complete this task:
 
     You can verify that GitHub Copilot is enabled by selecting the Copilot icon in lower-right corner of the Visual Studio Code window, or by opening the Chat view and ensuring that the Chat features are active.
 
-1. Use Visual Studio Code's EXPLORER view to expand the ContosoOrderProcessor folder, and then take a minute to review the project structure.
+1. Use Visual Studio Code's Explorer view to expand the ContosoOrderProcessor folder, and then take a minute to review the project structure.
 
     The ContosoOrderProcessor application follows a simple layered architecture. It includes the following files and folders:
 
@@ -289,7 +289,7 @@ Use the following steps to complete this task:
         - Email notification.
         - Shipping notification.
 
-1. Use Visual Studio Code's EXPLORER view to expand the **Configuration** folder.
+1. Use Visual Studio Code's Explorer view to expand the **Configuration** folder.
 
 1. Open the **AppConfig.cs** file and take a minute to review the code.
 
@@ -314,7 +314,7 @@ In this task, you create a PowerShell script that sets up environment variables,
 
 Use the following steps to complete this task:
 
-1. Use Visual Studio Code's EXPLORER view to create a file named **setup-secrets.ps1** at the root of your project.
+1. Use Visual Studio Code's Explorer view to create a file named **setup-secrets.ps1** at the root of your project.
 
     The script file is used to set environment variables for the current PowerShell session.
 
@@ -425,7 +425,7 @@ Use the following steps to complete this task:
 
 1. Add a file named **OriginalConsoleOutput.txt** to the root of your project.
 
-    You can create the file by right-clicking in the EXPLORER view, selecting **New File**, naming it **OriginalConsoleOutput.txt**.
+    You can create the file by right-clicking in the Explorer view, selecting **New File**, naming it **OriginalConsoleOutput.txt**.
 
 1. Copy the console output to the **OriginalConsoleOutput.txt** file.
 
@@ -660,7 +660,7 @@ Use the following steps to complete this task:
 
 1. Save the console output to a file named **RemediatedConsoleOutput.txt** at the root of your project.
 
-    You can create the file by right-clicking in the EXPLORER view, selecting **New File**, naming it **RemediatedConsoleOutput.txt**, and then copying the console output into the file.
+    You can create the file by right-clicking in the Explorer view, selecting **New File**, naming it **RemediatedConsoleOutput.txt**, and then copying the console output into the file.
 
 1. Compare the **OriginalConsoleOutput.txt** and **RemediatedConsoleOutput.txt** files to verify that the application behavior remains consistent after remediating the secret scanning alerts.
 

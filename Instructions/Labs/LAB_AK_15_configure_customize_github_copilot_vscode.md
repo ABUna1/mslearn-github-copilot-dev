@@ -123,7 +123,7 @@ Use the following steps to complete this task:
     code .
     ```
 
-1. In Visual Studio Code's EXPLORER view, expand the project folders.
+1. In Visual Studio Code's Explorer view, expand the project folders.
 
     The ContosoInventory application uses a three-project architecture:
 
@@ -299,7 +299,7 @@ Use the following steps to complete this task:
 
     If `/init` command created a `copilot-instructions.md` file in a `.github` folder, delete the file but keep the folder.
 
-1. Use Visual Studio Code's EXPLORER view to ensure that you have a **.github** folder in the root of your project.
+1. Use Visual Studio Code's Explorer view to ensure that you have a **.github** folder in the root of your project.
 
     > **NOTE**: The folder name must start with a period. This is a convention used by GitHub for configuration files and is the standard location for GitHub Copilot instruction files.
 

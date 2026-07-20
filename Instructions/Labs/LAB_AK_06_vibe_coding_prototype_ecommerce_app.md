@@ -193,7 +193,7 @@ Use the following steps to complete this section of the exercise:
 
     The suggested PRD file should be sufficient for this exercise. However, if you see any gaps or discrepancies, or if you want to add more information, you can edit the file directly in Visual Studio Code. You can also ask GitHub Copilot to help you refine the PRD by generating additional information or implementing clarifications.
 
-1. Open Visual Studio Code's EXPLORER view.
+1. Open Visual Studio Code's Explorer view.
 
 1. In the Chat view, enter the following prompt:
 
@@ -316,7 +316,7 @@ Use the following steps to complete this section of the exercise:
 
     GitHub Copilot Agent needs an empty folder to use as a workspace for the new app files.
 
-    The EXPLORER view in Visual Studio Code should look similar to the following:
+    The Explorer view in Visual Studio Code should look similar to the following:
 
     ```plaintext
     UNTITLED (WORKSPACE)
@@ -334,9 +334,9 @@ Use the following steps to complete this section of the exercise:
 
     Adding these files to the chat context tells GitHub Copilot Agent to reference the files when generating a response.
 
-    You can add files to the chat context by dragging and dropping them from the EXPLORER view onto the Chat view, or by using the **Add Context** button located in the bottom-left area of the Chat view.
+    You can add files to the chat context by dragging and dropping them from the Explorer view onto the Chat view, or by using the **Add Context** button located in the bottom-left area of the Chat view.
 
-1. In the EXPLORER view, select the **ShoppingApp** folder.
+1. In the Explorer view, select the **ShoppingApp** folder.
 
 1. In the Chat view, enter the following prompt:
 

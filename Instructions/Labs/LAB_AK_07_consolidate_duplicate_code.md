@@ -51,41 +51,27 @@ If you're using a hosted lab environment for this exercise:
 
     ```
 
-### Download sample code project
+### Clone the sample code project
 
-Use the following steps to download the sample project and open it in Visual Studio Code:
+Use the following steps to clone the training repository and open the sample project in Visual Studio Code:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the sample app project, open the following URL in your browser: [GitHub Copilot lab - consolidate duplicate code](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/GHCopilotEx7LabApps.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **GHCopilotEx7LabApps.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **GHCopilotEx7LabApps.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **GHCopilotEx7LabApps.zip**, and then select **Extract all**.
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles\07-consolidate-duplicate-code` folder and verify the following project structure:
 
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Copy the **GHCopilotEx7LabApps** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **GHCopilotEx7LabApps** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **GHCopilotEx7LabApps** and then select **Select Folder**.
-
-1. In the Visual Studio Code SOLUTION EXPLORER view, verify the following project structure:
-
-    - GHCopilotEx7LabApps\
+    - 07-consolidate-duplicate-code\
         - ECommerceOrderAndReturn\
             - Dependencies\
             - Configuration\
@@ -146,7 +132,7 @@ Use the following steps to complete this task:
 
     > **NOTE**: A copy of the console output is stored in the EXPECTED_OUTPUT.md file that's included in the project directory. You'll use this file to verify that the application behavior hasn't changed after consolidating the duplicate code.
 
-    You can run the application from the SOLUTION EXPLORER view by right-clicking **ECommerceOrdersAndReturns**, selecting **Debug**, and then selecting **Start New Instance**.
+    You can run the application from the Explorer view by right-clicking **ECommerceOrdersAndReturns**, selecting **Debug**, and then selecting **Start New Instance**.
 
     The console output includes:
 
@@ -188,11 +174,11 @@ Use the following steps to complete this task:
 
 1. Add the OrderProcessor and ReturnProcessor files to the Chat context.
 
-    Use a drag-and-drop operation to add the **OrderProcessor.cs** and **ReturnProcessor.cs** files from the SOLUTION EXPLORER to the Chat context.
+    Use a drag-and-drop operation to add the **OrderProcessor.cs** and **ReturnProcessor.cs** files from the Explorer to the Chat context.
 
     Adding a file to the chat context tells GitHub Copilot to include that file in context when analyzing your prompt.
 
-    If you're using the default folder view rather than SOLUTION EXPLORER, you can right-click a file and then select **Add File to Chat**. You can also open a file in the code editor to help establish context.
+    If you're using the default folder view rather than Explorer, you can right-click a file and then select **Add File to Chat**. You can also open a file in the code editor to help establish context.
 
 1. Ask GitHub Copilot to identify duplicate code patterns in the selected files.
 

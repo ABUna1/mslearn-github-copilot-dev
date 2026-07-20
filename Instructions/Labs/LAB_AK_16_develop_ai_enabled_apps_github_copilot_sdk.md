@@ -132,7 +132,7 @@ Use the following steps to complete this task:
 
 1. Take a moment to review the project structure.
 
-    Use Visual Studio Code's EXPLORER view to expand the project folders. You should see a folder structure that's similar to the following example:
+    Use Visual Studio Code's Explorer view to expand the project folders. You should see a folder structure that's similar to the following example:
 
     ```plaintext
     github-copilot-sdk-starter-app (root)
@@ -301,7 +301,7 @@ In this task, you create a new service class in the server project that implemen
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, right-click the **ContosoShop.Server/Services** folder, and then select **New File**.
+1. In Visual Studio Code's Explorer view, right-click the **ContosoShop.Server/Services** folder, and then select **New File**.
 
     You'll use this file to create the SupportAgentTools service class.
 
@@ -1072,7 +1072,7 @@ Use the following steps to complete this task:
 
 1. Save the file.
 
-1. In Visual Studio Code's EXPLORER view, right-click the **ContosoShop.Shared/Models** folder, and then select **New File**.
+1. In Visual Studio Code's Explorer view, right-click the **ContosoShop.Shared/Models** folder, and then select **New File**.
 
 1. Name the file **SupportQuery.cs**.
 
@@ -1126,7 +1126,7 @@ Use the following steps to complete this task:
 
     These models are lightweight DTOs for the support chat interface, enabling structured communication between the Blazor client and the AI-powered support endpoint. The simple design focuses on text-based question-and-answer exchanges with basic input validation.
 
-1. In Visual Studio Code's EXPLORER view, right-click the **ContosoShop.Server/Controllers** folder, and then select **New File**.
+1. In Visual Studio Code's Explorer view, right-click the **ContosoShop.Server/Controllers** folder, and then select **New File**.
 
 1. Name the file **SupportAgentController.cs**.
 
@@ -1693,7 +1693,7 @@ In this task, you create a client-side service to call the agent API and update 
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, right-click the **ContosoShop.Client/Services** folder, and then select **New File**.
+1. In Visual Studio Code's Explorer view, right-click the **ContosoShop.Client/Services** folder, and then select **New File**.
 
 1. Name the file **SupportAgentService.cs**.
 

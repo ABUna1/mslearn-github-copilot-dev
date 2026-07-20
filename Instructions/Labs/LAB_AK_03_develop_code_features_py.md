@@ -90,39 +90,25 @@ This exercise includes the following tasks:
 
 ## Set up the Library application in Visual Studio Code
 
-You need to download the existing application, extract the code files, and then open the project in Visual Studio Code.
+You need to clone the training repository and then open the Library project in Visual Studio Code.
 
 Use the following steps to set up the Library application:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the Library application, paste the following URL into your browser's address bar: [GitHub Copilot lab - develop code features](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/AZ2007LabAppM3Python.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **AZ2007LabAppM3Python.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **AZ2007LabAppM3Python.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **AZ2007LabAppM3Python.zip**, and then select **Extract all**.
-
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Open the extracted files folder, then copy the **AccelerateDevGHCopilot** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **AccelerateDevGHCopilot** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **AccelerateDevGHCopilot** and then select **Select Folder**.
-
-1. In the Visual Studio Code EXPLORER view, verify the following project structure:
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles/03-python-develop-code-features/AccelerateDevGHCopilot` folder and verify the following project structure:
 
     - AccelerateDevGHCopilot/library
         ├── application_core
@@ -133,7 +119,7 @@ Use the following steps to set up the Library application:
 
 1. Ensure that the application runs successfully.
 
-    For example, open a terminal in Visual Studio Code, navigate to the **AccelerateDevGHCopilot/library** directory, and run the following command:
+    For example, open a terminal in Visual Studio Code, navigate to the **LabFiles/03-python-develop-code-features/AccelerateDevGHCopilot/library** directory, and run the following command:
 
     ```bash
     python -m unittest discover -v tests
@@ -241,7 +227,7 @@ GitHub Copilot Chat can help you implement the code updates needed to complete t
 
 Use the following steps to complete this section of the exercise:
 
-1. Open the EXPLORER view.
+1. Open the Explorer view.
 
 1. Expand the **library/console** project.
 
@@ -820,7 +806,7 @@ Use the following steps to complete this section of the exercise:
 
 1. Ensure that you've accepted updates in both the console_app.py and main.py files.
 
-1. Open Visual Studio Code's EXPLORER view.
+1. Open Visual Studio Code's Explorer view.
 
 1. Run your tests or start the application to ensure that no errors were introduced by your code updates.
 

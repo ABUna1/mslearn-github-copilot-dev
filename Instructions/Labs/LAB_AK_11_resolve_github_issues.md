@@ -225,7 +225,7 @@ Use the following steps to complete this task:
 
     Ensure that you're using the latest version of Visual Studio Code and that you have the GitHub Copilot and GitHub Copilot Chat extensions installed and enabled.
 
-1. Examine the project structure in the EXPLORER view.
+1. Examine the project structure in the Explorer view.
 
     The ContosoShopEasy application follows a layered architecture with the following components:
 

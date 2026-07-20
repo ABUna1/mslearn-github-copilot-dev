@@ -51,41 +51,27 @@ If you're using a hosted lab environment for this exercise:
 
     ```
 
-### Download sample code projects
+### Clone the sample code projects
 
-Use the following steps to download the sample projects and open them in Visual Studio Code:
+Use the following steps to clone the training repository and open the sample projects in Visual Studio Code:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the sample app projects, open the following URL in your browser: [GitHub Copilot lab - develop code features](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/GHCopilotEx9LabApps.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **GHCopilotEx9LabApps.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **GHCopilotEx9LabApps.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **GHCopilotEx9LabApps.zip**, and then select **Extract all**.
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles\09-simplify-complex-conditionals` folder and verify the following project structure:
 
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Copy the **GHCopilotEx9LabApps** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **GHCopilotEx9LabApps** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **GHCopilotEx9LabApps** and then select **Select Folder**.
-
-1. In the Visual Studio Code SOLUTION EXPLORER view, verify the following project structure:
-
-    - GHCopilotEx9LabApps\
+    - 09-simplify-complex-conditionals\
         - ECommercePricingEngine\
             - Dependencies\
             - ECommercePricingDemo.cs
@@ -126,7 +112,7 @@ Use the following steps to complete this task:
 
 1. Verify that the **ECommercePricingEngine** code project builds successfully.
 
-    For example, in the SOLUTION EXPLORER view, right-click **ECommercePricingEngine**, and then select **Build**.
+    For example, in the Explorer view, right-click **ECommercePricingEngine**, and then select **Build**.
 
     You'll see warnings "Cannot convert null literal to non-nullable reference type." when you build the project, but there shouldn't be any errors. You can ignore the warnings for the purposes of this exercise.
 
@@ -282,7 +268,7 @@ Use the following steps to complete this task:
     > [!NOTE]
     > A copy of the output can be found in the **Output-ECommercePricingEngine.txt** file that's included in the ECommercePricingEngine folder. You can create your own output file if you want to compare results or if you modify sample data. When you reach the end of this exercise, you'll use the output file to ensure that your refactored code produces the same results as the original code.
 
-    To run the project: If you have the ECommercePricingDemo.cs file open in the Visual Studio Code editor, you can run the project by selecting the run button (Run project associated with this file) that's located above the top-right corner of the editor pane. To run the project from the SOLUTION EXPLORER view, right-click **ECommercePricingEngine**, select **Debug**, and then select **Start New Instance**.
+    To run the project: If you have the ECommercePricingDemo.cs file open in the Visual Studio Code editor, you can run the project by selecting the run button (Run project associated with this file) that's located above the top-right corner of the editor pane. To run the project from the Explorer view, right-click **ECommercePricingEngine**, select **Debug**, and then select **Start New Instance**.
 
 ### Identify refactoring opportunities in the E-commerce pricing code using GitHub Copilot
 
@@ -529,13 +515,13 @@ Use the following steps to complete this task:
 
 1. Build the project to ensure there are no compilation errors.
 
-    For example, in the SOLUTION EXPLORER view, right-click **ECommercePricingEngine**, and then select **Build**.
+    For example, in the Explorer view, right-click **ECommercePricingEngine**, and then select **Build**.
 
     If there are any compilation errors, review the refactored code and fix any issues. GitHub Copilot can help resolve compilation errors if needed.
 
 1. Run the application to test the refactored pricing logic.
 
-    If you have the ECommercePricingDemo.cs file open in the Visual Studio Code editor, you can run the project by selecting the run button (Run project associated with this file) that's located above the top-right corner of the editor pane. To run the project from the SOLUTION EXPLORER view, right-click **ECommercePricingEngine**, select **Debug**, and then select **Start New Instance**.
+    If you have the ECommercePricingDemo.cs file open in the Visual Studio Code editor, you can run the project by selecting the run button (Run project associated with this file) that's located above the top-right corner of the editor pane. To run the project from the Explorer view, right-click **ECommercePricingEngine**, select **Debug**, and then select **Start New Instance**.
 
     The application should execute without errors and display pricing calculations for various test scenarios.
 

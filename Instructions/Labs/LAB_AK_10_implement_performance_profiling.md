@@ -51,41 +51,27 @@ If you're using a hosted lab environment for this exercise:
 
     ```
 
-### Download sample code project
+### Clone the sample code project
 
-Use the following steps to download the sample project and open it in Visual Studio Code:
+Use the following steps to clone the training repository and open the sample project in Visual Studio Code:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the sample app projects, open the following URL in your browser: [GitHub Copilot lab - implement performance profiling](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/GHCopilotEx10LabApps.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **GHCopilotEx10LabApps.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **GHCopilotEx10LabApps.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **GHCopilotEx10LabApps.zip**, and then select **Extract all**.
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles\10-implement-performance-profiling` folder and verify the following project structure:
 
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Copy the **GHCopilotEx10LabApps** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **GHCopilotEx10LabApps** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **GHCopilotEx10LabApps** and then select **Select Folder**.
-
-1. In the Visual Studio Code SOLUTION EXPLORER view, verify the following project structure:
-
-    - GHCopilotEx10LabApps\
+    - 10-implement-performance-profiling\
         - ContosoOnlineStore\
             - Benchmarks\
             - Configuration\
@@ -188,7 +174,7 @@ Use the following steps to complete this task:
 
 1. Store the baseline performance metrics in a file named **baseline_metrics.txt**.
 
-    Use the EXPLORER view to create a text file named baseline_metrics.txt in the Benchmarks folder, and then copy the console output into the baseline_metrics.txt file.
+    Use the Explorer view to create a text file named baseline_metrics.txt in the Benchmarks folder, and then copy the console output into the baseline_metrics.txt file.
 
 1. Review the baseline_metrics.txt file.
 
@@ -232,7 +218,7 @@ Use the following steps to complete this task:
 
 1. Add the **InventoryManager.cs**, **OrderProcessor.cs**, and **ProductCatalog.cs** files to the Chat context.
 
-    Use a drag-and-drop operation to add **InventoryManager.cs**, **OrderProcessor.cs**, and **ProductCatalog.cs** from the SOLUTION EXPLORER to the Chat context.
+    Use a drag-and-drop operation to add **InventoryManager.cs**, **OrderProcessor.cs**, and **ProductCatalog.cs** from the Explorer to the Chat context.
 
     Adding files to the chat context tells GitHub Copilot to include those files when analyzing your prompts, which improves the accuracy and relevance of its analysis.
 
@@ -512,7 +498,7 @@ Use the following steps to complete this task:
 
 1. Save the new performance metrics in a file named **optimized_metrics.txt**.
 
-    Use the EXPLORER view to create a text file named optimized_metrics.txt in the Benchmarks folder, and then copy the console output into the optimized_metrics.txt file.
+    Use the Explorer view to create a text file named optimized_metrics.txt in the Benchmarks folder, and then copy the console output into the optimized_metrics.txt file.
 
 1. Take a minute to manually compare the optimized performance metrics with your baseline measurements from the first task.
 

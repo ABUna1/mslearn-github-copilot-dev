@@ -73,39 +73,25 @@ This exercise includes the following tasks:
 
 ## Set up the library application in Visual Studio Code
 
-You need to download the existing application, extract the code files, and then open the project in Visual Studio Code.
+You need to clone the training repository and then open the library project in Visual Studio Code.
 
 Use the following steps to set up the library application:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the library application, paste the following URL into your browser's address bar: [GitHub Copilot lab - refactor existing code](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/AZ2007LabAppM5Python.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **AZ2007LabAppM5Python.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **AZ2007LabAppM5Python.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **AZ2007LabAppM5Python.zip**, and then select **Extract all**.
-
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Open the extracted files folder, then copy the **AccelerateDevGHCopilot** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **AccelerateDevGHCopilot** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **AccelerateDevGHCopilot** and then select **Select Folder**.
-
-1. In the Visual Studio Code EXPLORER view, verify the following project structure:
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles/05-python-refactor-improve-existing-code/AccelerateDevGHCopilot` folder and verify the following project structure:
 
     - AccelerateDevGHCopilot/library
         ├── application_core
@@ -113,7 +99,7 @@ Use the following steps to set up the library application:
         ├── infrastructure
         └── tests
 
-1. Ensure that the initial code runs by tests successfully in the next section. Optionally, run the application if are familiar with the previous labs from the **\library** folder in the terminal using **`python console\main.py`**.
+1. Ensure that the initial code runs by tests successfully in the next section. Optionally, run the application if you're familiar with the previous labs from the **LabFiles/05-python-refactor-improve-existing-code/AccelerateDevGHCopilot/library** folder in the terminal using **`python console/main.py`**.
 
 ### Enable Pytest
 
@@ -166,7 +152,7 @@ In this section of the exercise, you use the Chat view in **Ask** mode to analyz
 
 Use the following steps to complete this section of the exercise:
 
-1. In the EXPLORER view, expand the **library** folder.
+1. In the Explorer view, expand the **library** folder.
 
 1. Open the GitHub Copilot Chat view.
 
@@ -460,7 +446,7 @@ This section of the exercise includes the following tasks:
 
 ### Generator Expression refactoring using Inline Chat
 
-1. In the EXPLORER view, expand the **infrastructure/json_patron_repository.py** project, and then open the **json_loan_repository.py** file and examine the **`JsonLoanRepository` class**.
+1. In the Explorer view, expand the **infrastructure/json_patron_repository.py** project, and then open the **json_loan_repository.py** file and examine the **`JsonLoanRepository` class**.
 
 1. To elect the **`JsonLoanRepository` class**, you highlight the entire class.
 
@@ -585,7 +571,7 @@ This section of the exercise includes the following tasks:
 
 1. Next, continue with the refactoring process for **loan_service.py**.
 
-1. In the EXPLORER view, expand the **application_core\services\loan_service.py** project, and then open the **loan_service.py** file and examine the **`LoanService` class**.
+1. In the Explorer view, expand the **application_core\services\loan_service.py** project, and then open the **loan_service.py** file and examine the **`LoanService` class**.
 
 1. To elect the **`LoanService` class**, you highlight the entire class, examine the`checkout_book` method.
 

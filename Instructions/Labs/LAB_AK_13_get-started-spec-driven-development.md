@@ -120,7 +120,7 @@ Use the following steps to complete this task:
 
     The `code .` command opens the current directory (RSSFeedReader) in Visual Studio Code.
 
-1. Use Visual Studio Code's EXPLORER view to expand the .github and .specify folders.
+1. Use Visual Studio Code's Explorer view to expand the .github and .specify folders.
 
     You should see a folder structure that's similar to the following example:
 
@@ -211,15 +211,21 @@ The **speckit.constitution.agent.md** file provides instructions for updating th
 
 The /speckit.constitution workflow uses text input, file input, and the codebase to collect the policies, standards, requirements, and guidelines that go into the constitution.md file. Providing detailed inputs helps to generate a more accurate and comprehensive constitution.
 
-In this task, you download the stakeholder documents for the RSSFeedReader project, evaluate their relationship to the GitHub Spec Kit commands, and then use the stakeholder documents to generate the constitution.md file.
+In this task, you obtain the stakeholder documents for the RSSFeedReader project, evaluate their relationship to the GitHub Spec Kit commands, and then use the stakeholder documents to generate the constitution.md file.
+
+The stakeholder documents are provided in the `mslearn-github-copilot-dev` training repository, under the `LabFiles\13-spec-driven-development\StakeholderDocuments` folder. You copy that folder into your RSSFeedReader project so the `/speckit.constitution` command can reference the files.
 
 Use the following steps to complete this task:
 
-1. To download the stakeholder documents, open the following link in a browser: [RSSFeedReader - stakeholder documents](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/GHSpecKitEx13StakeholderDocuments.zip).
+1. Open a new Visual Studio Code window, select **Clone Git Repository...** on the Welcome page (or run **Git: Clone** from the Command Palette with **Ctrl+Shift+P**).
 
-1. Open the folder containing the downloaded ZIP file.
+1. Enter the following URL to clone the repository to a convenient location (for example, `C:\learn-github-copilot`):
 
-1. Extract the contents of the downloaded ZIP file to a temporary folder, copy the files, and then paste them into the root folder of the RSSFeedReader project.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
+
+1. Using File Explorer, navigate to the `LabFiles\13-spec-driven-development` folder in the cloned repository, copy the **StakeholderDocuments** folder, and then paste it into the root folder of your RSSFeedReader project.
 
     The updated RSSFeedReader project should resemble the following example:
 
@@ -237,7 +243,7 @@ Use the following steps to complete this task:
     └── README.md                   (a readme file describing the project documentation)
     ```
 
-1. In Visual Studio Code's EXPLORER view, expand the **StakeholderDocuments** folder.
+1. In Visual Studio Code's Explorer view, expand the **StakeholderDocuments** folder.
 
     The StakeholderDocuments folder should include the following files:
 
@@ -283,16 +289,16 @@ Use the following steps to complete this task:
 
 1. To accept the changes to all updated files, select the **Keep** button in the Chat view.
 
-1. Save and then close the updated files.
+1.  Save and then close the updated files.
 
 1. Commit and push the updated files to your Git repository.
 
     For example:
 
     1. Open Visual Studio Code's SOURCE CONTROL view.
-    1. Enter a commit message like "Updated constitution using stakeholder requirements."
-    1. Stage and commit the changes.
-    1. Push the changes to your Git repository.
+    2. Enter a commit message like "Updated constitution using stakeholder requirements."
+    3. Stage and commit the changes.
+    4. Push the changes to your Git repository.
 
     You can verify the commit by checking your GitHub repository in the browser. The updated constitution.md file should now appear with your commit message.
 
@@ -306,7 +312,7 @@ In this task, you use GitHub Copilot's `/speckit.specify` command to generate a 
 
 Use the following steps to complete this task:
 
-1. Use Visual Studio Code's EXPLORER view to examine the **spec-template.md** and **speckit.specify.agent.md** files.
+1. Use Visual Studio Code's Explorer view to examine the **spec-template.md** and **speckit.specify.agent.md** files.
 
     Notice the following things about these files:
 
@@ -314,7 +320,7 @@ Use the following steps to complete this task:
     - The speckit.specify.agent.md file provides detailed instructions for the /speckit.specify command. It guides GitHub Copilot on how to create a specification based on the provided requirements.
     - The speckit.specify.agent.md file generates a repository branch at the beginning of the workflow. Creating a branch generally requires user permissions, so GitHub Copilot prompts for permission when the workflow is run.
 
-1. Use Visual Studio Code's EXPLORER view to examine the **ProjectGoals.md** and **AppFeatures.md** stakeholder documents.
+1. Use Visual Studio Code's Explorer view to examine the **ProjectGoals.md** and **AppFeatures.md** stakeholder documents.
 
     The AppFeatures.md file is your primary resource for user-facing feature requirements and provides the context needed to create a comprehensive specification. The ProjectGoals.md file provides information about the MVP and rollout plan that can also help to inform the specification.
 
@@ -344,9 +350,9 @@ Use the following steps to complete this task:
 
     It can take 4-6 minutes to create the spec.md file and the requirements checklist used to validate your specification. If the workflow process is inactive for more than 6 minutes without reporting successful completion, you can use GitHub Copilot's **retry** command to restart the workflow.
 
-1. Once the specify workflow is complete, use Visual Studio Code's EXPLORER view to expand the **specs** and **checklists** folders.
+1. Once the specify workflow is complete, use Visual Studio Code's Explorer view to expand the **specs** and **checklists** folders.
 
-1. In the EXPLORER view, select **spec.md**, and then take a couple minutes to review the spec.md file.
+1. In the Explorer view, select **spec.md**, and then take a couple minutes to review the spec.md file.
 
     The spec.md file is based on the template located in the **.specify/templates/spec-template.md** file. The updated spec.md file should include a detailed specification for the RSS Feed Reader app based on the stakeholder requirements that you provided.
 
@@ -374,7 +380,7 @@ Use the following steps to complete this task:
 
     - System MUST allow users to add a feed subscription by providing a feed URL.
 
-1. In the EXPLORER view, select **requirements.md**, and then take a minute to review the requirements.md file.
+1. In the Explorer view, select **requirements.md**, and then take a minute to review the requirements.md file.
 
     Verify that no issues are reported in the **requirements.md** file. You should see that all checklist items passed successfully.
 
@@ -398,7 +404,7 @@ In this task, you use GitHub Copilot's `/speckit.plan` command to generate a com
 
 Use the following steps to complete this task:
 
-1. Use Visual Studio Code's EXPLORER view to open the **plan-template.md** and **speckit.plan.agent.md** files.
+1. Use Visual Studio Code's Explorer view to open the **plan-template.md** and **speckit.plan.agent.md** files.
 
 1. Take a minute to review the **plan-template.md** and **speckit.plan.agent.md** files.
 
@@ -458,7 +464,7 @@ In this task, you use the GitHub Spec Kit's `/speckit.tasks` command to generate
 
 Use the following steps to complete this task:
 
-1. Use Visual Studio Code's EXPLORER view to open the **tasks-template.md** and **speckit.tasks.agent.md** files.
+1. Use Visual Studio Code's Explorer view to open the **tasks-template.md** and **speckit.tasks.agent.md** files.
 
 1. Take a minute to review the **tasks-template.md** and **speckit.tasks.agent.md** files.
 

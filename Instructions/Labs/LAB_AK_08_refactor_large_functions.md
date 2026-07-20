@@ -51,41 +51,27 @@ If you're using a hosted lab environment for this exercise:
 
     ```
 
-### Download sample code project
+### Clone the sample code project
 
-Use the following steps to download the sample project and open it in Visual Studio Code:
+Use the following steps to clone the training repository and open the sample project in Visual Studio Code:
 
-1. Open a browser window in your lab environment.
+> **NOTE**: If you already cloned the `mslearn-github-copilot-dev` repository for a previous exercise, skip the cloning steps below. Open the cloned repository in Visual Studio Code and continue with the verification step.
 
-1. To download a zip file containing the sample app project, open the following URL in your browser: [GitHub Copilot lab - refactor large functions](https://github.com/MicrosoftLearning/mslearn-github-copilot-dev/raw/refs/heads/main/DownloadableCodeProjects/Downloads/GHCopilotEx8LabApps.zip)
+1. Open a new Visual Studio Code window.
 
-    The zip file is named **GHCopilotEx8LabApps.zip**.
+1. On the Welcome page, select **Clone Git Repository...** (or open the Command Palette with **Ctrl+Shift+P** and run **Git: Clone**), and then enter the following URL:
 
-1. Extract the files from the **GHCopilotEx8LabApps.zip** file.
+    ```plaintext
+    https://github.com/MicrosoftLearning/mslearn-github-copilot-dev.git
+    ```
 
-    For example:
+1. When the file selection dialog appears, create a new folder in a convenient location to hold the repository (for example, `learn-github-copilot`), select it, and then click **Select as Repository Destination**.
 
-    1. Navigate to the downloads folder in your lab environment.
+1. After the clone completes, select **Open** to open the cloned repository in Visual Studio Code.
 
-    1. Right-click **GHCopilotEx8LabApps.zip**, and then select **Extract all**.
+1. In the Visual Studio Code Explorer view, navigate to the `LabFiles\08-refactor-large-functions` folder and verify the following project structure:
 
-    1. Select **Show extracted files when complete**, and then select **Extract**.
-
-1. Copy the **GHCopilotEx8LabApps** folder to a location that's easy to access, such as your Windows Desktop folder.
-
-1. Open the **GHCopilotEx8LabApps** folder in Visual Studio Code.
-
-    For example:
-
-    1. Open Visual Studio Code in your lab environment.
-
-    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-
-    1. Navigate to the Windows Desktop folder, select **GHCopilotEx8LabApps** and then select **Select Folder**.
-
-1. In the Visual Studio Code SOLUTION EXPLORER view, verify the following project structure:
-
-    - GHCopilotEx8LabApps\
+    - 08-refactor-large-functions\
         - ECommerceOrderProcessing\
             - src\
                 - ECommerce.ApplicationCore\
@@ -148,7 +134,7 @@ Use the following steps to complete this task:
 
     > **NOTE**: GitHub Copilot's responses can vary based on the selected model. We suggest that you use the specified model when performing this lab exercise. You can repeat the exercise with a different model if you want to see the differences.
 
-1. Use the SOLUTION EXPLORER view to locate the **OrderProcessor.cs** file.
+1. Use the Explorer view to locate the **OrderProcessor.cs** file.
 
     The **OrderProcessor.cs** file is located in the **src/ECommerce.ApplicationCore/Services** folder.
 
@@ -174,7 +160,7 @@ Use the following steps to complete this task:
 
     You have several options for running the application. For example:
 
-    In the SOLUTION EXPLORER view, right-click the **ECommerce.Console** project, select **Debug**, and then select **Start New Instance**. Or, if you have the **Program.cs** file open in Visual Studio Code, you can select the run button above the editor.
+    In the Explorer view, right-click the **ECommerce.Console** project, select **Debug**, and then select **Start New Instance**. Or, if you have the **Program.cs** file open in Visual Studio Code, you can select the run button above the editor.
 
     You can also navigate to the **src/ECommerce.Console** folder in the terminal and enter the following .NET CLI command:
 
@@ -215,7 +201,7 @@ Use the following steps to complete this task:
 
 1. Add the OrderProcessor.cs file to the Chat context.
 
-    Use a drag-and-drop operation to add the **src/ECommerce.ApplicationCore/Services/OrderProcessor.cs** file from the SOLUTION EXPLORER to the Chat context. Adding a file to the chat context tells GitHub Copilot to include that file when analyzing your prompt, which improves the accuracy of its analysis.
+    Use a drag-and-drop operation to add the **src/ECommerce.ApplicationCore/Services/OrderProcessor.cs** file from the Explorer to the Chat context. Adding a file to the chat context tells GitHub Copilot to include that file when analyzing your prompt, which improves the accuracy of its analysis.
 
 1. Ask GitHub Copilot to analyze the ProcessOrder method for refactoring opportunities.
 
