@@ -22,7 +22,12 @@ This exercise should take approximately **30** minutes to complete.
 
 ## Before you start
 
-Your lab environment must include the following: Git 2.48 or later, .NET SDK 9.0 or later, Visual Studio Code with the C# Dev Kit extension, and access to a GitHub account with GitHub Copilot enabled.
+Your lab environment MUST include the following resources:
+
+- Git 2.48 or later.
+- The .NET SDK version 9.0 or later.
+- Access to a GitHub account with GitHub Copilot enabled.
+- Visual Studio Code (version 1.116 or later) with the C# Dev Kit extension.
 
 ### Configure your lab environment
 

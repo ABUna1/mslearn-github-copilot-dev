@@ -16,9 +16,9 @@ Before you begin the Spec-Driven Development with GitHub Dev Kit lab exercise, y
 Your lab environment must include the following resources:
 
 - Git version 2.48 or later.
-- The .NET SDK version 8.0 or later.
+- The .NET SDK version 9.0 or later.
 - Access to a GitHub account with GitHub Copilot enabled.
-- Visual Studio Code with the C# Dev Kit and GitHub Copilot Chat extensions.
+- Visual Studio Code (version 1.116 or later) with the C# Dev Kit extension.
 - SQL Server LocalDB or SQLite.
 - Python version 3.11 or later.
 - The uv package manager.
@@ -99,7 +99,7 @@ Complete the following steps to ensure that the required GitHub, .NET, and Visua
 
 1. Ensure that GitHub Copilot Chat is accessible in your Visual Studio Code environment.
 
-    You can install the GitHub Copilot Chat extension using the Extensions view in Visual Studio Code.
+    GitHub Copilot Chat is a built-in extension for Visual Studio Code version 1.116 and later. In VS Code, navigate to **View** > **Chat**, or select the GitHub Copilot icon in the bottom right toolbar.
 
 ## Install the lab application dependencies
 

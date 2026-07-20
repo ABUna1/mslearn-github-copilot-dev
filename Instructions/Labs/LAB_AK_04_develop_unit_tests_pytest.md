@@ -20,7 +20,12 @@ This exercise should take approximately **25** minutes to complete.
 
 ## Before you start
 
-Your lab environment must include the following: Git 2.48 or later, Python 3.10 or later, Visual Studio Code with the Python extension form Microsoft, and access to a GitHub account with GitHub Copilot enabled.
+Your lab environment MUST include the following resources:
+
+- Git 2.48 or later.
+- Python 3.10 or later
+- Access to a GitHub account with GitHub Copilot enabled.
+- Visual Studio Code (version 1.116 or later) with the Python Extension for VS Code installed
 
 If you're using a local PC as a lab environment for this exercise:
 

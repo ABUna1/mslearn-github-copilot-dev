@@ -55,6 +55,6 @@ Complete the following steps to verify that your lab environment is configured c
 
     Open the settings/profile page of your GitHub account and verify that you have access to a GitHub Copilot subscription. If you have an active subscription for GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, or GitHub Copilot Enterprise that you can use for training, you can use your existing GitHub Copilot subscription to complete the GitHub Copilot exercises.
 
-    If you have an individual GitHub account, but you don't have a GitHub Copilot subscription, you can set up a GitHub Copilot Free plan from Visual Studio Code during a training exercise.
+    If you have an individual GitHub account, but you don't have a GitHub Copilot subscription, you can set up a GitHub Copilot Free plan either from the GitHub settings page or from Visual Studio Code during a training exercise.
 
     > **IMPORTANT**: The GitHub Copilot Free plan is a limited version of GitHub Copilot, allowing up to 2,000 code completions and 50 chats or premium requests per month. If you use a GitHub Copilot Free plan outside training exercises, you may exceed the plan's resource limits before completing the training. The GitHub Copilot Free plan is not available for GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, or GitHub Copilot Enterprise subscriptions.
